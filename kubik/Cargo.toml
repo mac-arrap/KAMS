@@ -1,0 +1,18 @@
+[package]
+name = "kubik"
+version = "0.1.0"
+authors = ["camiloparra <caeparra@gmail.com>"]
+edition = "2018"
+description = "aries kms storage layer"
+license = "Apache-2.0"
+readme =  "../README.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "1.0.0", features = ["postgres"] }
+dotenv = "0.9.0"
+ffi-support = { version = "0.3.5"}
+lox = { git = "https://github.com/mikelodder7/lox", branch="master"}
+serde = { version = "1.0"}
+serde_json = { version = "1.0"}
+serde_derive = { version = "1.0"}
